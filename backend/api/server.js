@@ -18,9 +18,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: process.env.CLIENT_URL, // Your frontend URL
+  origin: `${process.env.CLIENT_URL}`,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
-  credentials: true, // This allows cookies and other credentials to be sent
+  credentials: true,
 };
 
 // Middleware
